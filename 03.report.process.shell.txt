@@ -1,0 +1,23 @@
+anhhung@anhhung-Latitude-E6330:~$ ps man
+  PID TTY      STAT   TIME COMMAND
+  990 tty7     -      1:21 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/ru
+    - -        Ssl+   1:15 -
+    - -        Ssl+   0:05 -
+ 1426 tty1     -      0:00 /sbin/agetty --noclear tty1 linux
+    - -        Ss+    0:00 -
+ 5912 pts/2    -      0:00 bash
+    - -        Ss     0:00 -
+ 5932 pts/2    -      0:00 ps man
+    - -        R+     0:00 -
+anhhung@anhhung-Latitude-E6330:~$ gnome-calculator
+
+** (gnome-calculator:5938): WARNING **: currency.vala:407: Currency LTL is not provided by IMF or ECB
+anhhung@anhhung-Latitude-E6330:~$ ps -a|grep "gnome-calculato"
+ 6014 pts/2    00:00:00 gnome-calculato
+anhhung@anhhung-Latitude-E6330:~$ kill -STOP 6014
+[1]+  Stopped                 gnome-calculator
+anhhung@anhhung-Latitude-E6330:~$ kill -CONT 6014
+anhhung@anhhung-Latitude-E6330:~$ kill -KILL 6014
+[1]+  Killed                  gnome-calculator
+
+
