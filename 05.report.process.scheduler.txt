@@ -1,14 +1,29 @@
-anhhung@anhhung-Latitude-E6330:~$ cat /proc/sched_debug | grep "systemd"
- systemd-journal   257        64.708610       646   120         0.000000       166.512329         0.000000 0 0 /autogroup-9
-   systemd-udevd   280       612.750776       426   120         0.000000       457.416332         0.000000 0 0 /autogroup-12
- systemd-timesyn   585        11.479780        32   120         0.000000        10.643031         0.000000 0 0 /autogroup-29
-  systemd-logind   949         4.378639       368   120         0.000000        28.861633         0.000000 0 0 /autogroup-54
-         systemd  1115         9.189921         7   120         0.000000        15.039777         0.000000 0 0 /autogroup-75
-         systemd     1       346.743767      1669   120         0.000000      1084.817948         0.000000 0 0 /autogroup-2
-anhhung@anhhung-Latitude-E6330:~$ cat /proc/1/sched | grep 'switches'
-nr_switches                                  :                 1720
-nr_voluntary_switches                        :                 1261
-nr_involuntary_switches                      :                  459
+anhhung@anhhung-Latitude-E6330:~$ cat /proc/sched_debug | grep systemd
+         systemd     1       286.437685      1684   120         0.000000      1075.938007         0.000000 0 0 /autogroup-2
+anhhung@anhhung-Latitude-E6330:~$ cat /proc/1/sched
+systemd (1, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :       4188520.378282
+se.vruntime                                  :           224.464434
+se.sum_exec_runtime                          :          1076.238620
+se.nr_migrations                             :                  208
+nr_switches                                  :                 1685
+nr_voluntary_switches                        :                 1263
+nr_involuntary_switches                      :                  422
+se.load.weight                               :              1048576
+se.avg.load_sum                              :               300032
+se.avg.util_sum                              :               300032
+se.avg.load_avg                              :                    0
+se.avg.util_avg                              :                    0
+se.avg.last_update_time                      :        4188520377344
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   50
+mm->numa_scan_seq                            :                    0
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
 anhhung@anhhung-Latitude-E6330:~$ 
-
 
