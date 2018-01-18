@@ -1,0 +1,36 @@
+Compositor  4228     31323.844852      5394   120         0.000000       601.204104         0.000000 0 0 /autogroup-126
+ TaskSchedulerSe  4234     17268.482657         2   120         0.000000         0.116754         0.000000 0 0 /autogroup-126
+ TaskSchedulerRe  4238     32196.890131        20   120         0.000000         0.814316         0.000000 0 0 /autogroup-126
+ Chrome_ChildIOT  4239     32041.786349      7813   120         0.000000       703.965683         0.000000 0 0 /autogroup-126
+ chromium-browse  4581     32269.506194      3100   120         0.000000      1580.559154         0.000000 0 0 /autogroup-126
+ TaskSchedulerRe  4586     32190.725907         4   120         0.000000         0.125671         0.000000 0 0 /autogroup-126
+ CompositorTileW  4591     32131.687870       340   120         0.000000        35.662796         0.000000 0 0 /autogroup-126
+ ScriptStreamerT  4610     31691.451040        14   120         0.000000        64.773232         0.000000 0 0 /autogroup-126
+ TaskSchedulerRe  4625     32184.797143        17   120         0.000000         3.263108         0.000000 0 0 /autogroup-126
+     kworker/3:2  4631    128922.679982         2   120         0.000000         0.001968         0.000000 0 0 /
+anhhung@anhhung-Latitude-E6330:~$ cat /proc/2/sched
+kthreadd (2, #threads: 1)
+-------------------------------------------------------------------
+se.exec_start                                :        969752.572742
+se.vruntime                                  :        130727.289752
+se.sum_exec_runtime                          :             4.372786
+se.nr_migrations                             :                  100
+nr_switches                                  :                  255
+nr_voluntary_switches                        :                  255
+nr_involuntary_switches                      :                    0
+se.load.weight                               :              1048576
+se.avg.load_sum                              :                56320
+se.avg.util_sum                              :                56320
+se.avg.load_avg                              :                    0
+se.avg.util_avg                              :                    0
+se.avg.last_update_time                      :         969752571904
+policy                                       :                    0
+prio                                         :                  120
+clock-delta                                  :                   50
+numa_pages_migrated                          :                    0
+numa_preferred_nid                           :                   -1
+total_numa_faults                            :                    0
+current_node=0, numa_group_id=0
+numa_faults node=0 task_private=0 task_shared=0 group_private=0 group_shared=0
+anhhung@anhhung-Latitude-E6330:~$ 
+
