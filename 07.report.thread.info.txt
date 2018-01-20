@@ -1,0 +1,3 @@
+anhhung@anhhung-Latitude-E6330:~$ ps -o nlwp 1918
+NLWP
+  57
